@@ -205,13 +205,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -14.81}
+  m_LocalRotation: {x: 0.5626769, y: 0.054015305, z: -0.011290765, w: 0.8248331}
+  m_LocalPosition: {x: -0.15, y: 10.66, z: -7.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 68.349, y: 11.951, z: 6.562}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 558600022}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -653,7 +653,7 @@ Transform:
   m_GameObject: {fileID: 1024537827}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.51715, y: 3.12, z: -2.2203}
+  m_LocalPosition: {x: 0.51715, y: 3.12, z: -3.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -698,7 +698,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2581b0ccea943e642aea87b36b03b7e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhysicsPlayer
-  forceDirection: {x: 0, y: 20, z: 0}
+  canJump: 0
+  speed: 5
+  jumpForce: 300
   rb: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
