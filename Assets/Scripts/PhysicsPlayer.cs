@@ -44,8 +44,8 @@ public class PhysicsPlayer : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Ground"))
         {
-
             canJump = true;
         }
     }
 }
+
