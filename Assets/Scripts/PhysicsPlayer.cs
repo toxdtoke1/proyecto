@@ -1,16 +1,20 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using TMPro;
+
 
 public class PhysicsPlayer : MonoBehaviour
 {
-    public bool canJump = false;
+    public bool canJump = true;
     public float speed = 5f;
     public float jumpForce = 300f;
     public Rigidbody rb;
 
+
     void Start()
     {
-        rb = GetComponent<Rigidbody>(); 
+        rb = GetComponent<Rigidbody>();
+ 
     }
 
 
@@ -18,7 +22,7 @@ public class PhysicsPlayer : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && canJump)
         {
-            rb.AddForce(new Vector3(0, jumpForce, 0));
+            rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
             canJump = false;
         }
         if (Input.GetKey(KeyCode.W))
